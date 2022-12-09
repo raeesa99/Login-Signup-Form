@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="tabs">
+            <button class="tab-links active" id="login-btn">Log in</button>
+            <button class="tab-links" id="signup-btn">Sign Up</button>
+        </div>
+        <div id="main-content">
+            <div id="login-content">
+                <h2 class="title">Login</h2>
+            <form id="login-form">
+                <label for="username">User Name: </label>
+                <input id="text" type="text" name="username" placeholder="Enter username">
+
+                <label for="password">Password: </label>
+                <input type="password" name="password" placeholder="Enter password">
+
+                <input type="submit" value="Log In">
+            </form>
+    </div>
+
+        <div id="signup-content">
+              <h2 class="title">Sign Up</h2>
+
+            <form id="signup-form">
+               <label for="username">User Name: </label>
+               <input type="text" name="username" placeholder="Choose a username">
+
+               <label for="email">Email: </label>
+               <input type="email" name="email" placeholder="Enter your email address">
+
+               <label for="password">Password: </label>
+               <input type="password" name="password" placeholder="Choose a password">
+
+               <input type="submit" value="Sign Up">
+            </form>
+    </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>

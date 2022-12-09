@@ -1,0 +1,135 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#container {
+    width: 70%;
+    background-color:  #c38e70;
+    box-shadow: 6px 12px 20px #774936;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+#tabs{
+    display: flex;
+    border-bottom: 1px solid #cb997e;
+    
+}
+
+#tabs button {
+    background-color: #c99a7e;
+    color: #774936;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 16px 14px;
+}
+
+#tabs button:hover {
+    background-color: #b1785f;
+}
+
+#tabs button.active {
+    background-color: #b1785f;
+    color: #774936;
+    border-top: 2px solid rgb(113, 109, 109);
+    padding: 14px 16px;;
+}
+
+#login-content, #signup-content {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signup-content {
+    display: none;
+}
+
+.title{
+    color: #774936;
+    text-align: center;
+    font-size: 35px;
+
+ }
+
+#login-form, #signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+input {
+    margin-bottom: 50px;
+    border-radius: 3px;
+    width: 60%;
+    padding:  6px;
+    border: #5e3523;
+    box-shadow: 3px 3px 1px 0 #633f30;
+}
+
+label{
+    color: #774936;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+::placeholder {
+    color: #5e3523;
+    /* font-size: small; */
+}
+
+.loginAnimation {
+    animation: login 700ms ease-in-out;
+}
+
+.signupAnimation {
+    animation: signup 700ms ease-in-out;
+}
+
+@keyframes login {
+    0% {opacity: 1;}
+    50% {opacity: 0; transform: translateX(300px);}
+    51% {transform: translateX(-300px);}
+    100% {opacity: 1; transform: translateX(0px);}
+}
+
+@keyframes signup {
+    0% {opacity: 1;}
+    50% {opacity: 0; transform: translateX(-300px);}
+    51% {transform: translateX(300px);}
+    100% {opacity: 1; transform: translateX(0px);}
+}
+
+input[type="submit"] {
+    width: 25%;
+    margin: 5px 0px 0px 0px;
+    padding: 2%;
+    border: 1px  #774936;
+    box-shadow: 1px 1px 2px 0 #613f30;
+    color: #5e3523;
+    background-color: #b1785f;
+}
+
+input[type="submit"]:hover {
+    cursor :pointer;
+    width: 25%;
+    color:#774936;
+    /* margin-bottom: 5%; */
+    /* padding: 2%;
+    border: 1px solid rgba(114, 114, 103, 0.267); */
+    box-shadow: 1px 2px 1px 0 #633f30;
+}
